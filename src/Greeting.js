@@ -20,6 +20,7 @@ export const Greeting = (props) => {
             </h3>            
             <ul>
                 {props.favoriteColors && props.favoriteColors.map(x => <li>{x}</li>)}
+                {!props.favoriteColors && <li>None</li>}
             </ul>
         </>
     );
